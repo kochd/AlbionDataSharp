@@ -24,7 +24,7 @@ namespace AlbionDataSharp.Network.Pow
 
 
             var request = new HttpRequestMessage(HttpMethod.Get, fullURL);
-            request.Headers.Add("User-Agent", "AlbionDataSharp");
+            request.Headers.Add("User-Agent", "AlbionDataSharp/1.0");
             HttpResponseMessage response = await client.SendAsync(request);
 
             if (response.StatusCode != HttpStatusCode.OK)
